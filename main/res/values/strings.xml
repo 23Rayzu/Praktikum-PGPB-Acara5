@@ -1,0 +1,9 @@
+<resources>
+        <string name="app_name">tugas_acara5</string>
+        <string-array name="keterangan_array">
+            <item>Hadir Tepat Waktu</item>
+            <item>Terlambat</item>
+            <item>Izin</item>
+            <item>Sakit</item>
+        </string-array>
+    </resources>

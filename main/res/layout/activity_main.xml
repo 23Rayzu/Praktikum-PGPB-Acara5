@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#404040">
+
+    <!-- Home Page Background -->
+    <RelativeLayout
+        android:id="@+id/homePage"
+        android:layout_width="360dp"
+        android:layout_height="800dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="5dp"
+        android:padding="20dp"
+        android:radius="30dp">
+
+        <!-- Presensi Header -->
+        <TextView
+            android:id="@+id/presensiTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Presensi"
+            android:textColor="#1E293B"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- DatePicker -->
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="200sp"
+            android:layout_below="@+id/presensiTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:calendarViewShown="true"
+            android:dateTextAppearance="?android:attr/textAppearanceSmall"
+            android:spinnersShown="false" />
+
+        <!-- TimePicker -->
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="125sp"
+            android:layout_below="@+id/datePicker"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:timePickerMode="spinner" />
+
+        <!-- Spinner -->
+        <Spinner
+            android:id="@+id/spinnerKeterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timePicker"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#555555"
+            android:entries="@array/keterangan_array"
+            android:padding="10dp"
+            android:spinnerMode="dropdown" />
+
+        <EditText
+            android:id="@+id/editTextKeterangan"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_below="@+id/spinnerKeterangan"
+            android:layout_marginTop="20dp"
+            android:hint="Keterangan"
+            android:inputType="textMultiLine"
+            android:lines="3" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="298dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/editTextKeterangan"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#0000FF"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
